@@ -1,4 +1,69 @@
 
-body {
+
+/* 1 version to link: tag - none */
+
+ul {
+    /* properties */
+
+    color:blue;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 2 version  to link : class -> .  */
+.color-red {
     color: red;
+}
+
+.custom-puddings {
+    
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+.font-size {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 3 version : id -> # */ 
+
+#custom-id-2 {
+    color: crimson;
 }
