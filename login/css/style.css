@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
+
+* {
+    font-family: "Roboto", serif;
+}
 
 body {
     background-color: bisque;
@@ -7,11 +12,12 @@ body {
     align-items: center;
     min-height: 100vh; /* view height */ 
     
+    font-family: "Roboto", serif;
 }
 
 .box {
-    min-height: 300px;
-    min-width: 200px;
+    min-height: 725px;
+    min-width: 400px;
     width: 250px;
     border: 1px solid gray;
     border-radius: 7px;
@@ -19,4 +25,61 @@ body {
     /*margin: auto;*/
 
     box-shadow: 0px 0px 20px 0px rgba(77,77,77,0.68);
+
+    padding-left: 45px;
+    padding-right: 45px;
+    box-sizing: border-box;
+}
+
+/* HEADING */
+h1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+
+    font-size: 40px;
+    font-weight: 700;
+    /*font-style: italic;*/
+}
+
+label[for="username"], label[for="password"]
+{
+    text-transform: capitalize;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+
+input[type="text"], input[id="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    border-bottom: 2px solid gray;
+    outline: none;
+    padding-left: 50px;
+    box-sizing: border-box;
+}
+
+
+
+input[type="text"]::placeholder,
+input[id="password"]::placeholder {
+    color: rgb(190, 190, 190);
+    font-size: 13px;
+}
+
+
+/* input with icon */
+
+.input-w-icon {
+    position: relative;
+}
+
+.custom-svg {
+    width:16px;
+    height: 16px;
+    fill: gray;
+    position: absolute;
+    left: 10px;
+    top: 12px;
 }
