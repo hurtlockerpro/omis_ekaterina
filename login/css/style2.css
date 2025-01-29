@@ -1,0 +1,49 @@
+
+.custom {
+    border: 1px solid blue;
+    position: absolute;
+    left:  10px;
+    top: 10px;
+}
+
+
+.parent {
+    border: 1px solid red;
+    padding: 10px;
+
+    position: relative;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.child {
+    border: 1px solid green;
+    margin: 10px;
+}

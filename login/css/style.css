@@ -2,6 +2,14 @@
 
 * {
     font-family: "Roboto", serif;
+    margin: 0;
+    padding: 0;
+}
+
+.custom-span {
+    color: red;
+    font-weight: bold;
+    padding-top: 50px;
 }
 
 body {
@@ -13,6 +21,11 @@ body {
     min-height: 100vh; /* view height */ 
     
     font-family: "Roboto", serif;
+
+    background: rgb(0,219,222);
+    background: linear-gradient(13deg, rgba(0,219,222,1) 0%, rgba(251,0,255,1) 100%);
+
+    overflow: hidden;
 }
 
 .box {
@@ -56,7 +69,7 @@ input[type="text"], input[id="password"] {
     border: 0;
     border-bottom: 2px solid gray;
     outline: none;
-    padding-left: 50px;
+    padding-left: 35px;
     box-sizing: border-box;
 }
 
@@ -73,6 +86,7 @@ input[id="password"]::placeholder {
 
 .input-w-icon {
     position: relative;
+    margin-bottom: 15px;
 }
 
 .custom-svg {
@@ -81,5 +95,53 @@ input[id="password"]::placeholder {
     fill: gray;
     position: absolute;
     left: 10px;
-    top: 12px;
+    top: 27px;
+}
+
+.material-symbols-outlined {
+    color: gray;
+    position: absolute;
+    left: 10px;
+    top: 27px;
+}
+
+/* BACKGROUND SQUARES */
+
+#left{
+    width: 250px;
+    height: 200px;
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    left: -100px;
+    transform: rotate(67deg);
+    border-radius: 10px;
+    opacity: 0.2;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+}
+
+#right{
+    width: 300px;
+    height: 250px;
+    background-color: white;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+    opacity: 0.2;
+    position: absolute;
+    top: calc(50vh - 200);
+    right: -165px;
+    transform: rotate(53deg);
+    border-radius: 10px;
+}
+
+#bottom{
+    width: 250px;
+    height: 200px;
+    background-color: white;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+    opacity: 0.2;
+    position: absolute;
+    bottom: 0px;
+    left: -100px;
+    transform: rotate(67deg);
+    border-radius: 10px;
 }

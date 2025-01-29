@@ -4,28 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=lock" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
+    <div id="left"></div>
+    <div id="right"></div>
+    <div id="bottom"></div>
 
+
+        
     <div class="box">
         
         <h1>Login</h1>
 
-        <form action="" method="post">
+        <form action="" method="post"> 
 
-
-            <label for="username">username</label>
+            
             <div class="input-w-icon">
-                <input type="text" name="" id="username" placeholder="Type your username">
+                <label for="username">username</label>
                 <svg class="custom-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z"/></svg>
+                
+                <input type="text" name="" id="username" placeholder="Type your username">
                 
             </div>
 
-
-            <label for="password">password</label>
-            <input type="password" name="" id="password" placeholder="Type your password">
+            <div class="input-w-icon">
+                <label for="password">password</label>
+                <input type="password" name="" id="password" placeholder="Type your password">
+                <span class="material-symbols-outlined">lock</span>
+            </div>
 
             <a href="http://">forgot password?</a>
 
