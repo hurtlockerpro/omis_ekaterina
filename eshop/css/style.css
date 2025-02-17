@@ -1,0 +1,11 @@
+
+.card {
+    background-image: url("../img/products/product1-1.png");
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: 150px;
+    height: 400px;
+    background-color: bisque ;
+
+
+}
