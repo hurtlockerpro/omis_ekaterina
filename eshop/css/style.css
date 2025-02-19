@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/*
 .card {
     background-image: url("../img/products/product1-1.png");
     background-position: center right;
@@ -6,6 +9,63 @@
     background-size: 150px;
     height: 400px;
     background-color: bisque ;
+}
+*/
+
+.card-img {
+  border-radius: unset;
+  width: 27%;
+  position: relative;
+  left: 70%;
+}
+
+.card {
+  border: unset;
+  border-radius: unset;
+  background-color: bisque ;
+}
+
+.card-img-overlay {
+    right: 30%;
+}
+
+.custom-font {
+    font-family: "Imperial Script", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 60px; 
+}
+
+.custom-text-color {
+    color: gray;
+    font-size: 1rem;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+/* CUSTOM LINK */
+
+.link-wrapper {
+    border: 0;
+    padding-bottom: 3px;
+    border-bottom: 2px solid red;
+}
+.custom-link {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.link-bold {
+    font-weight: bold;
+}
 
 
+@media only screen and (max-width: 576px) {
+    /* css */
+    .card-title {
+        line-height: .7;
+    }
 }
