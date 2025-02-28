@@ -29,11 +29,18 @@
     right: 30%;
 }
 
-.custom-font {
+.handwrite-font {
     font-family: "Imperial Script", serif;
     font-weight: 600;
     font-style: normal;
     font-size: 60px; 
+}
+
+.machine-font {
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 25px; 
 }
 
 .custom-text-color {
@@ -44,6 +51,8 @@
     font-weight: 200;
     font-style: normal;
 }
+
+
 
 /* CUSTOM LINK */
 
@@ -68,4 +77,28 @@
     .card-title {
         line-height: .7;
     }
+}
+
+@media only screen and (min-width: 576px) {
+    .col {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+}
+
+/*
+.custom-nav-block {
+    display:flex;
+    align-items: center;
+}*/
+
+.custom-btn {
+    background-color: transparent;
+    border: unset;
+    margin: 5px;
+    font-size: 18px;
+}
+
+.badge {
+    font-size: .6em !important;
 }
