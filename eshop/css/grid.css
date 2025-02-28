@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*
+.card {
+    background-image: url("../img/products/product1-1.png");
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: 150px;
+    height: 400px;
+    background-color: bisque ;
+}
+*/
+
+
+.card-img {
+  border-radius: unset;
+  width: 27%;
+  position: relative;
+  left: 70%;
+}
+
+.card {
+    position:relative;
+  border: unset;
+  border-radius: unset;
+  background-color: bisque ;
+}
+
+.card-img-overlay {
+    right: 30%;
+}
+
+.handwrite-font {
+    font-family: "Imperial Script", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 60px; 
+}
+
+.machine-font {
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 25px; 
+}
+
+.custom-text-color {
+    color: gray;
+    font-size: 1rem;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+
+
+/* CUSTOM LINK */
+
+.link-wrapper {
+    border: 0;
+    padding-bottom: 3px;
+    border-bottom: 2px solid red;
+}
+.custom-link {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.link-bold {
+    font-weight: bold;
+}
+
+.card-title {
+    font-size: clamp(1rem, 2vw, 2rem);
+}
+
+.card-title-main {
+    font-size: clamp(2rem, 3vw, 4rem);
+}
+
+
+@media only screen and (max-width: 576px) {
+    /* css */
+    .card-title {
+        line-height: .7;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .col {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+}
+
+/*
+.custom-nav-block {
+    display:flex;
+    align-items: center;
+}*/
+
+.custom-btn {
+    background-color: transparent;
+    border: unset;
+    margin: 5px;
+    font-size: 18px;
+}
+
+.badge {
+    font-size: .6em !important;
+}
+
+
+/* GRID */
+
+
+.custom-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    grid-template-rows: repeat(2, auto); /* 2 rows */
+    gap: 10px;
+}
+
+.grid-cell {
+    background: lightgray;
+    position: relative;
+}
+
+
+/* First cell spans 2 columns and 2 rows */
+.grid-cell:first-child {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+
+.grid-cell  img{
+    width: 30%;
+    object-fit: cover;
+
+}
+
+/* Mobile view: stack all items in a single column */
+@media (max-width: 768px) {
+    .custom-grid {
+        grid-template-columns: 1fr; /* Single column */
+        grid-template-rows: auto; /* Adjust rows dynamically */
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .grid-cell:first-child {
+        grid-column: span 1; /* Remove column span */
+        grid-row: span 1; /* Remove row span */
+    }
+}
