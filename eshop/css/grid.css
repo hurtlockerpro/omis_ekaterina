@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+
 /*
 .card {
     background-image: url("../img/products/product1-1.png");
@@ -13,18 +15,26 @@
 */
 
 
-.card-img {
-  border-radius: unset;
-  width: 27%;
-  position: relative;
-  left: 70%;
+.main-card-img{
+    border-radius: unset;
+    width: 27%;
+    position: relative;
+    left: 70%;
+}
+
+.small-card-img {
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+    right: -65px;
 }
 
 .card {
-    position:relative;
-  border: unset;
-  border-radius: unset;
-  background-color: bisque ;
+    border: unset;
+    border-radius: unset;
+    background-color: bisque ;
+    height: 100%;
+    position: relative;
 }
 
 .card-img-overlay {
@@ -126,7 +136,6 @@
 
 .grid-cell {
     background: lightgray;
-    position: relative;
 }
 
 
@@ -137,17 +146,14 @@
 }
 
 
-.grid-cell  img{
-    width: 30%;
-    object-fit: cover;
-
-}
-
 /* Mobile view: stack all items in a single column */
-@media (max-width: 768px) {
+@media (max-width: 576px) {
+    .card {
+        min-height: 250px;
+    }
     .custom-grid {
         grid-template-columns: 1fr; /* Single column */
-        grid-template-rows: auto; /* Adjust rows dynamically */
+        grid-template-rows: 250px; /* Adjust rows dynamically */
         margin-left: 10px;
         margin-right: 10px;
     }
