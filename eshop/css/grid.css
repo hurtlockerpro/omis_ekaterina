@@ -26,7 +26,15 @@
     width: 90%;
     position: absolute;
     bottom: 0;
-    right: -65px;
+    right: -55px;
+}
+
+.small-card-img-child {
+
+    width: 60%;
+    position: absolute;
+    bottom: 0;
+    right: -15px;
 }
 
 .card {
@@ -35,6 +43,7 @@
     background-color: bisque ;
     height: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .card-img-overlay {
